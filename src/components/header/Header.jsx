@@ -27,7 +27,7 @@ const Header = () => {
                 </Badge>
             </div>
             <div className={style.logo}>
-                こえレク
+                KoeREC
             </div>
             <div className={style.button}>
                 <IconSettings />

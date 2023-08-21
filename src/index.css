@@ -15,8 +15,8 @@ a.active > div {
 }
 
 :root {
-    --color-accent: rgb(66, 133, 244);
+    --color-accent: rgb(135, 230, 110);
     --color-main: rgb(255, 255, 255);
-    --color-background: rgb(235, 235, 235);
-    --color-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    --color-background: rgb(230, 230, 230);
+    --color-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }

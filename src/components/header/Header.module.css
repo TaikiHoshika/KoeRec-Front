@@ -4,8 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: var(--color-accent);
-    box-shadow: var(--color-shadow);
+    background: var(--color-main);
 }
 
 .logo {
