@@ -1,0 +1,25 @@
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--color-accent);
+    box-shadow: var(--color-shadow);
+}
+
+.logo {
+    font-size: 25px;
+    flex: 1;
+    text-align: center;
+}
+
+.button {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    && svg {
+        width: 35px;
+        height: 35px;
+    }
+}

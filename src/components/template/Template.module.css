@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    z-index: 1;
+}
+
+.menu {
+    z-index: 1;
+}
+
+.main {
+    z-index: -1;
+    flex: 1;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+}
