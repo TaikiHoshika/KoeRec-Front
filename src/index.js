@@ -7,6 +7,7 @@ import "./index.css";
 import Template from "./components/template/Template";
 import Listen from "./pages/listen/Listen";
 import Record from "./pages/record/Record";
+import Player from "./pages/player/Player";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
                 <Route index element={<h1>Index</h1>} />
                 <Route path="/record" element={<Record />} />
                 <Route path="/listen" element={<Listen />} />
+                <Route path="/player" element={<Player />} />
             </Route>
             <Route path="*" element={<h1>Page Not Found</h1>} />
         </Routes>
