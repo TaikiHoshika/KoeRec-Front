@@ -1,13 +1,15 @@
 
-import folder from "../../resources/icons/folder.png"
+import iconFolder from "../../resources/icons/folder.png"
 import style from "./Listen.module.css";
 
 const Listen = () => {
     return (
         <div className={style.container}>
-
-            <div className={style.folder}>
-                <img src={folder} alt="" />
+            <div className={style.search}>
+                <input type="text" placeholder="ファイルを検索" />
+            </div>
+            <div className={style.iconFolder}>
+                <img src={iconFolder} alt="" />
                 <div className={style.description}>
                     <div className={style.title}>
                         <span>会議</span>
@@ -18,8 +20,8 @@ const Listen = () => {
                 </div>
             </div>
 
-            <div className={style.folder}>
-                <img src={folder} alt="" />
+            <div className={style.iconFolder}>
+                <img src={iconFolder} alt="" />
                 <div className={style.description}>
                     <div className={style.title}>
                         <span>セミナー</span>

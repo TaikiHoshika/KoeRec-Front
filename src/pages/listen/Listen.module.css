@@ -50,8 +50,8 @@
     height: 10%;
     width: 100%;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 10px;
 
     display: flex;
@@ -69,4 +69,28 @@
             margin-left: auto;
         }
     }
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > input {
+        border: 0px;
+        border-radius: 6px;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        height: 30px;
+        width: 60%;
+    }
+
+    > input:focus {
+        outline: 0px;
+    }
+
 }
