@@ -11,7 +11,7 @@ const Menu = () => {
             <div className={style.button}>
                 <NavLink to="/record">
                     <div>
-                        <IconRecord />
+                        <IconRecord fontSize="large" />
                         <span>録る</span>
                     </div>
                 </NavLink>
@@ -19,7 +19,7 @@ const Menu = () => {
             <div className={style.button}>
                 <NavLink to="/listen">
                     <div>
-                        <IconListen />
+                        <IconListen fontSize="large" />
                         <span>聞く</span>
                     </div>
                 </NavLink>

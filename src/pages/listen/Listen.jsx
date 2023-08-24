@@ -1,3 +1,4 @@
+import IconCreateFolder from '@mui/icons-material/CreateNewFolderRounded';
 
 import iconFolder from "../../resources/icons/folder.png"
 import style from "./Listen.module.css";
@@ -8,7 +9,7 @@ const Listen = () => {
             <div className={style.search}>
                 <input type="text" placeholder="ファイルを検索" />
             </div>
-            <div className={style.iconFolder}>
+            <div className={style.folder}>
                 <img src={iconFolder} alt="" />
                 <div className={style.description}>
                     <div className={style.title}>
@@ -20,7 +21,7 @@ const Listen = () => {
                 </div>
             </div>
 
-            <div className={style.iconFolder}>
+            <div className={style.folder}>
                 <img src={iconFolder} alt="" />
                 <div className={style.description}>
                     <div className={style.title}>
@@ -42,6 +43,69 @@ const Listen = () => {
                 </div>
             </div>
 
+            <div className={style.item}>
+                <div className={style.title}>
+                    <span>レポート報告</span>
+                </div>
+                <div className={style.time}>
+                    <span className={style.date}>2023/04/05</span>
+                    <span className={style.time}>15:12</span>
+                </div>
+            </div>
+
+            <div className={style.item}>
+                <div className={style.title}>
+                    <span>勉強会</span>
+                </div>
+                <div className={style.time}>
+                    <span className={style.date}>2023/04/02</span>
+                    <span className={style.time}>22:53</span>
+                </div>
+            </div>
+
+            <div className={style.item}>
+                <div className={style.title}>
+                    <span>勉強会</span>
+                </div>
+                <div className={style.time}>
+                    <span className={style.date}>2023/04/02</span>
+                    <span className={style.time}>22:53</span>
+                </div>
+            </div>
+
+            <div className={style.item}>
+                <div className={style.title}>
+                    <span>勉強会</span>
+                </div>
+                <div className={style.time}>
+                    <span className={style.date}>2023/04/02</span>
+                    <span className={style.time}>22:53</span>
+                </div>
+            </div>
+
+            <div className={style.item}>
+                <div className={style.title}>
+                    <span>勉強会</span>
+                </div>
+                <div className={style.time}>
+                    <span className={style.date}>2023/04/02</span>
+                    <span className={style.time}>22:53</span>
+                </div>
+            </div>
+
+            <div className={style.item}>
+                <div className={style.title}>
+                    <span>勉強会</span>
+                </div>
+                <div className={style.time}>
+                    <span className={style.date}>2023/04/02</span>
+                    <span className={style.time}>22:53</span>
+                </div>
+            </div>
+
+            <div className={style.button}>
+                <IconCreateFolder fontSize="large" />
+            </div>
         </div>
     );
 }

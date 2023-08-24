@@ -11,12 +11,16 @@ body {
 }
 
 a.active > div {
-    filter: invert(73%) sepia(78%) saturate(3317%) hue-rotate(1deg) brightness(102%) contrast(111%);
+    color: var(--color-accent);
+
+    > svg {
+        color: var(--color-accent);
+    }
 }
 
 :root {
-    --color-accent: rgb(135, 230, 110);
+    --color-accent: rgb(255, 166, 0);
     --color-main: rgb(255, 255, 255);
     --color-background: rgb(230, 230, 230);
-    --color-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    --color-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
