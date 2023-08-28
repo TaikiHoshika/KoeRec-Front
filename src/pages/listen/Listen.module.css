@@ -105,6 +105,7 @@
     right: 20px;
 
     background-color: var(--color-accent);
+    border: 0px;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -116,4 +117,8 @@
     > svg {
         color: var(--color-main);
     }
+}
+
+.button:focus {
+    outline: 0px;
 }
