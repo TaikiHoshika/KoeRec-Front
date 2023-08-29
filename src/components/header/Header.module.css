@@ -1,11 +1,12 @@
 .header {
-    height: 70px;
+    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: var(--color-main);
 
+    background: var(--color-main);
     box-shadow: var(--color-shadow);
 }
 
@@ -16,11 +17,24 @@
 }
 
 .button {
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+
     padding-left: 10px;
     padding-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     && svg {
         width: 35px;
         height: 35px;
+
+        color: var(--color-font-light);
     }
+}
+
+.button:focus {
+    outline: 0px;
 }

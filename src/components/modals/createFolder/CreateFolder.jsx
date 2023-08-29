@@ -1,28 +1,48 @@
 import { useState } from 'react';
+import { createPortal } from "react-dom";
 import ColorPicker from "../../colorPicker/ColorPicker";
 
 import IconClose from "@mui/icons-material/CloseRounded";
 import IconAdd from '@mui/icons-material/AddCircleRounded';
+import IconInfo from '@mui/icons-material/Info';
 
 import style from "./CreateFolder.module.css"
 
 const CreateFolder = ({isShow, handlerToggleShow}) => {
+    const [showNoNameError, setShowNoNameError] = useState(false);
+    const [showNoColorError, setShowNoColorError] = useState(false);
 
     const [name, setName] = useState("");
     const handlerChangeText = (event) => {
         setName(event.target.value);
     }
 
-    const [color, setColor] = useState("#ffffff");
+    const [color, setColor] = useState("");
     const handleChangeColor = (color) => {
         setColor(color);
     }
 
     const closeWindow = () => {
+        setName("");
+        setColor("");
         handlerToggleShow(!isShow);
     }
 
     const handlerCreateFolder = () => {
+        if(name === "") {
+            setShowNoNameError(true);
+            setTimeout(() => {
+                setShowNoNameError(false);
+            }, 3000);
+            return;
+        }
+        if(color === "") {
+            setShowNoColorError(true);
+            setTimeout(() => {
+                setShowNoColorError(false);
+            }, 3000);
+            return;
+        }
         console.log(name);
         console.log(color);
         closeWindow();
@@ -40,7 +60,7 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
     ];
 
     if(isShow) {
-        return (
+        return createPortal((
             <div className={style.background}>
                 <div className={style.container}>
                     <div className={style.header}>
@@ -67,8 +87,22 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
                         </button>
                     </div>
                 </div>
+                <div className={style.errors}>
+                    { showNoNameError &&
+                        <div>
+                            <IconInfo />
+                            <span>名前を入力してください</span>
+                        </div>
+                    }
+                    { showNoColorError &&
+                        <div>
+                            <IconInfo />
+                            <span>色を選択してください</span>
+                        </div>
+                    }
+                </div>
             </div>
-        );
+        ), document.getElementById("modal"));
     }
 }
 

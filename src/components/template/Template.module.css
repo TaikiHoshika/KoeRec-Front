@@ -1,20 +1,29 @@
-.container {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    width: 100%;
-}
-
-.main {
-    flex: 1;
-    overflow-y: scroll;
-    background-color: var(--color-background);
-}
-
 .header {
+    position: absolute;
+    top: 0;
+
+    height: 70px;
+    width: 100%;
+
     z-index: 1;
 }
 
+.main {
+    position: absolute;
+    top: 70px;
+
+    height: calc(100% - 70px - 15vh);
+    width: 100%;
+    
+    background-color: var(--color-background);
+}
+
 .menu {
+    position: absolute;
+    bottom: 0;
+
+    height: 15vh;
+    width: 100%;
+
     z-index: 1;
 }

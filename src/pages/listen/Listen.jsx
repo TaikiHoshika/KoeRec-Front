@@ -2,9 +2,12 @@ import { useState } from "react";
 
 import CreateFolder from "../../components/modals/createFolder/CreateFolder";
 import MediaPlayer from "../../components/modals/mediaPlayer/MediaPlayer";
-import IconCreateFolder from "@mui/icons-material/CreateNewFolderRounded";
 
-import iconFolder from "../../resources/icons/folder.png"
+import IconCreateFolder from "@mui/icons-material/CreateNewFolderRounded";
+import IconFolder from '@mui/icons-material/FolderRounded';
+import IconFile from '@mui/icons-material/AudioFileRounded';
+import IconSearch from '@mui/icons-material/SearchRounded';
+
 import style from "./Listen.module.css";
 
 const Listen = () => {
@@ -29,104 +32,47 @@ const Listen = () => {
                 handlerToggleShow={handlerShowMediaPlayer}
             />
             <div className={style.search}>
-                <input type="text" placeholder="ファイルを検索" />
+                <div className={style.search}>
+                    <input type="text" placeholder="ファイルを検索" />
+                    <IconSearch />
+                </div>
             </div>
-            <div className={style.folder}>
-                <img src={iconFolder} alt="" />
+            
+            <div className={style.item}>
+                <div
+                    className={style.color}
+                    style={{backgroundColor: "#FFD147"}}
+                >
+                </div>
                 <div className={style.description}>
-                    <div className={style.title}>
-                        <span>会議</span>
-                    </div>
-                    <div className={style.files}>
+                    <IconFolder />
+                    <div className={style.description}>
+                        <span className={style.title}>会議</span>
                         <span>8個のファイル</span>
                     </div>
                 </div>
             </div>
 
-            <div className={style.folder}>
-                <img src={iconFolder} alt="" />
+            <div className={style.item}>
+                <div
+                    className={style.color}
+                    style={{backgroundColor: "#FFD147"}}
+                >
+                </div>
                 <div className={style.description}>
-                    <div className={style.title}>
-                        <span>セミナー</span>
+                    <IconFile />
+                    <div className={style.description}>
+                        <span className={style.title}>中間報告会</span>
+                        <div className={style.time}>
+                            <span className={style.date}>2023/05/02</span>
+                            <span className={style.length}>12:03</span>
+                        </div>
                     </div>
-                    <div className={style.files}>
-                        <span>4個のファイル</span>
-                    </div>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>中間報告会</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/05/02</span>
-                    <span className={style.time}>12:03</span>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>レポート報告</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/04/05</span>
-                    <span className={style.time}>15:12</span>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>勉強会</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/04/02</span>
-                    <span className={style.time}>22:53</span>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>勉強会</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/04/02</span>
-                    <span className={style.time}>22:53</span>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>勉強会</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/04/02</span>
-                    <span className={style.time}>22:53</span>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>勉強会</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/04/02</span>
-                    <span className={style.time}>22:53</span>
-                </div>
-            </div>
-
-            <div className={style.item}>
-                <div className={style.title}>
-                    <span>勉強会</span>
-                </div>
-                <div className={style.time}>
-                    <span className={style.date}>2023/04/02</span>
-                    <span className={style.time}>22:53</span>
                 </div>
             </div>
 
             <button type="button" className={style.button} onClick={handlerShowCreateFolder}>
-                <IconCreateFolder fontSize="large" />
+                <IconCreateFolder/>
             </button>
         </div>
     );

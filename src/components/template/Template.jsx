@@ -9,16 +9,14 @@ import style from "./Template.module.css"
 const Base = () => {
     return (
         <Div100vh>
-            <div className={style.container}>
-                <div className={style.header}>
-                    <Header />
-                </div>
-                <div className={style.main}>
-                    <Outlet />
-                </div>
-                <div className={style.menu}>
-                    <Menu/>
-                </div>
+            <div className={style.header}>
+                <Header />
+            </div>
+            <div className={style.main} id="modal">
+                <Outlet />
+            </div>
+            <div className={style.menu}>
+                <Menu/>
             </div>
         </Div100vh>
     );

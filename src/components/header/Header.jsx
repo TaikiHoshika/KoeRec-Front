@@ -1,37 +1,39 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Badge from '@mui/material/Badge';
 
 import IconNotifications from '@mui/icons-material/NotificationsRounded';
 import IconSettings from '@mui/icons-material/SettingsRounded';
 
 import style from "./Header.module.css";
+import Notification from "../modals/notification/Notification";
 
 const Header = () => {
     const [invisible, setInvisible] = useState(false);
-
     const handleBadgeVisibility = () => {
-        setInvisible(!invisible);
+        setInvisible((prev) => !prev);
     };
 
-    useEffect(() => {
-        handleBadgeVisibility();
-    
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    const [showNotification, setShowNotification] = useState(false);
+    const handlerShowNotification = () => {
+        setShowNotification((prev) => !prev);
+    };
 
     return (
         <div className={style.header}>
-            <div className={style.button}>
+            <Notification
+                isShow={showNotification}
+                handlerToggleShow={handlerShowNotification}
+            />
+            <button type="button" className={style.button} onClick={handlerShowNotification}>
                 <Badge color="warning" variant="dot" overlap="circular" invisible={invisible}>
                     <IconNotifications color="action" />
                 </Badge>
-            </div>
+            </button>
             <div className={style.logo}>
-                KoeREC
             </div>
-            <div className={style.button}>
+            <button type="button" className={style.button}>
                 <IconSettings />
-            </div>
+            </button>
         </div>
     );
 }

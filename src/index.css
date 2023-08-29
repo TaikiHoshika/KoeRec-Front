@@ -22,7 +22,8 @@ a.active > div {
     --color-font-light: rgb(75, 75, 75);
     --color-font-dark: rgb(255, 255, 255);
     --color-accent: rgb(255, 166, 0);
-    --color-warning: rgb(233, 103, 103);
+    --color-warning: rgb(245, 172, 172);
+    --color-success: rgb(102, 216, 108);
     --color-main: rgb(255, 255, 255);
     --color-background: rgb(230, 230, 230);
     --color-background-modal: rgba(0, 0, 0, 0.6);
