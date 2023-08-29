@@ -16,7 +16,6 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
     const [color, setColor] = useState("#ffffff");
     const handleChangeColor = (color) => {
         setColor(color);
-        console.log(color);
     }
 
     const closeWindow = () => {
@@ -40,7 +39,7 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
         "#9C27B0",
     ];
 
-    if (isShow) {
+    if(isShow) {
         return (
             <div className={style.background}>
                 <div className={style.container}>
