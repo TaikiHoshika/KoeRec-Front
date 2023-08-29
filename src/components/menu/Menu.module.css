@@ -7,6 +7,8 @@
 
     border-top: solid 1px;
     border-color: var(--color-main);
+
+    box-shadow: var(--color-shadow);
 }
 
 .button {

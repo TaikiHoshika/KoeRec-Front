@@ -10,3 +10,11 @@
     overflow-y: scroll;
     background-color: var(--color-background);
 }
+
+.header {
+    z-index: 1;
+}
+
+.menu {
+    z-index: 1;
+}

@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import ColorPicker from "../../colorPicker/ColorPicker";
+
 import IconClose from "@mui/icons-material/CloseRounded";
+import IconAdd from '@mui/icons-material/AddCircleRounded';
 
 import style from "./CreateFolder.module.css"
-import { useState } from 'react';
 
 const CreateFolder = ({isShow, handlerToggleShow}) => {
 
@@ -59,9 +61,12 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
                             onChangeColor={handleChangeColor}
                         />
                     </div>
-                    <button type="button" onClick={handlerCreateFolder} className={style.buttons}>
-                        作成
-                    </button>
+                    <div className={style.button}>
+                        <button type="button" onClick={handlerCreateFolder}>
+                            <IconAdd />
+                            <span>作成</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         );

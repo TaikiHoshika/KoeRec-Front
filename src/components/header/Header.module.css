@@ -5,6 +5,8 @@
     justify-content: center;
     flex-direction: row;
     background: var(--color-main);
+
+    box-shadow: var(--color-shadow);
 }
 
 .logo {
