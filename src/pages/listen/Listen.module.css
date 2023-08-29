@@ -116,6 +116,8 @@
     align-items: center;
     justify-content: center;
 
+    box-shadow: var(--color-shadow);
+
     > svg {
         color: var(--color-main);
     }

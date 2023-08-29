@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import CreateFolder from "../../components/modals/createFolder/CreateFolder";
+import MediaPlayer from "../../components/modals/mediaPlayer/MediaPlayer";
 import IconCreateFolder from "@mui/icons-material/CreateNewFolderRounded";
 
 import iconFolder from "../../resources/icons/folder.png"
@@ -8,16 +9,24 @@ import style from "./Listen.module.css";
 
 const Listen = () => {
     const [showCreateFolder, setShowCreateFolder] = useState(false);
-
     const handlerShowCreateFolder = () => {
         setShowCreateFolder((prev) => !prev);
     };
+
+    const [showMediaPlayer, setShowMediaPlayer] = useState(false);
+    const handlerShowMediaPlayer = () => {
+        setShowMediaPlayer((prev) => !prev);
+    }
 
     return (
         <div className={style.container}>
             <CreateFolder
                 isShow={showCreateFolder}
                 handlerToggleShow={handlerShowCreateFolder}
+            />
+            <MediaPlayer
+                isShow={showMediaPlayer}
+                handlerToggleShow={handlerShowMediaPlayer}
             />
             <div className={style.search}>
                 <input type="text" placeholder="ファイルを検索" />

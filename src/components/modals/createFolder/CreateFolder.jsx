@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import ColorPicker from "../../colorPicker/ColorPicker";
 
 import IconClose from "@mui/icons-material/CloseRounded";
-import IconCreateFolder from "@mui/icons-material/CreateNewFolderRounded";
+import IconAdd from '@mui/icons-material/AddCircleRounded';
 
 import style from "./CreateFolder.module.css"
-import { useState } from 'react';
 
 const CreateFolder = ({isShow, handlerToggleShow}) => {
 
@@ -16,7 +16,6 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
     const [color, setColor] = useState("#ffffff");
     const handleChangeColor = (color) => {
         setColor(color);
-        console.log(color);
     }
 
     const closeWindow = () => {
@@ -40,7 +39,7 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
         "#9C27B0",
     ];
 
-    if (isShow) {
+    if(isShow) {
         return (
             <div className={style.background}>
                 <div className={style.container}>
@@ -63,7 +62,7 @@ const CreateFolder = ({isShow, handlerToggleShow}) => {
                     </div>
                     <div className={style.button}>
                         <button type="button" onClick={handlerCreateFolder}>
-                            <IconCreateFolder />
+                            <IconAdd />
                             <span>作成</span>
                         </button>
                     </div>
