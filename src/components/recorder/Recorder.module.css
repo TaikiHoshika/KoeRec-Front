@@ -1,0 +1,148 @@
+.isRecording {
+    background-color: rgba(0, 0, 0, 0);
+
+    > svg {
+        opacity: 0;
+    }
+}
+
+.isNotRecording {
+    background-color: var(--color-background);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--color-main);
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    > .header {
+        font-weight: bold;
+    }
+
+    > .description {
+        display: flex;
+        align-items: center;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        height: 40px;
+        
+        > .title {
+            height: 100%;
+            border-radius: 6px;
+
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+
+            > svg {
+                color: var(--color-font-light);
+                height: 100%;
+                width: auto;
+            }
+
+            > input {
+                width: 100px;
+                height: 30px;
+
+                background-color: rgba(0, 0, 0, 0);
+                border: 0px;
+                margin-left: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                font-size: 20px;
+            }
+
+            > input:focus {
+                outline: 0px;
+            }
+        }
+
+        > button {
+            height: 40px;
+            width: 40px;
+
+            background-color: var(--color-accent);
+            border-radius: 50%;
+            border: 0px;
+
+            margin-left: 10px;
+
+            > svg {
+                color: var(--color-font-light);
+                height: 80%;
+                width: auto;
+            }
+        }
+
+        > button:focus {
+            outline: 0px;
+        }
+    }
+}
+
+.recorder {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    > button {
+        margin-left: 0;
+
+        box-shadow: var(--color-shadow);
+        background-color: rgb(204, 66, 66);
+        border-radius: 50%;
+        border: 0px;
+
+        height: 60px;
+        width: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > svg {
+            height: 70%;
+            width: auto;
+            color: var(--color-font-dark)
+        }
+    }
+
+    > button:disabled {
+        background-color: var(--color-disabled);
+    }
+
+    > .switch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        left: 0;
+        margin-left: 40px;
+    }
+}
