@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Badge from '@mui/material/Badge';
+import Badge from "@mui/material/Badge";
 
-import IconNotifications from '@mui/icons-material/NotificationsRounded';
-import IconSettings from '@mui/icons-material/SettingsRounded';
+import IconNotifications from "@mui/icons-material/NotificationsRounded";
+import IconSettings from "@mui/icons-material/SettingsRounded";
 
 import style from "./Header.module.css";
 import Notification from "../modals/notification/Notification";

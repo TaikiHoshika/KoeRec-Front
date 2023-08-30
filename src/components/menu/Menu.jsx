@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
-import IconRecord from '@mui/icons-material/KeyboardVoiceRounded';
-import IconListen from '@mui/icons-material/HeadphonesRounded';
+import IconRecord from "@mui/icons-material/KeyboardVoiceRounded";
+import IconListen from "@mui/icons-material/HeadphonesRounded";
 
 import style from "./Menu.module.css";
 

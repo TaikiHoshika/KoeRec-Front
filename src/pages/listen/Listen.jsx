@@ -4,9 +4,9 @@ import CreateFolder from "../../components/modals/createFolder/CreateFolder";
 import MediaPlayer from "../../components/modals/mediaPlayer/MediaPlayer";
 
 import IconCreateFolder from "@mui/icons-material/CreateNewFolderRounded";
-import IconFolder from '@mui/icons-material/FolderRounded';
-import IconFile from '@mui/icons-material/AudioFileRounded';
-import IconSearch from '@mui/icons-material/SearchRounded';
+import IconFolder from "@mui/icons-material/FolderRounded";
+import IconFile from "@mui/icons-material/AudioFileRounded";
+import IconSearch from "@mui/icons-material/SearchRounded";
 
 import style from "./Listen.module.css";
 

@@ -8,6 +8,7 @@ body {
 * {
     padding: 0px;
     margin: 0px;
+    user-select: none;
 }
 
 a.active > div {
@@ -21,6 +22,7 @@ a.active > div {
 :root {
     --color-font-light: rgb(75, 75, 75);
     --color-font-dark: rgb(255, 255, 255);
+    --color-font-link: rgb(87, 166, 255);
     --color-accent: rgb(255, 166, 0);
     --color-warning: rgb(245, 172, 172);
     --color-success: rgb(102, 216, 108);

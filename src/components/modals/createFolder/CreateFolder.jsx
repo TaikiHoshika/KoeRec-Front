@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { createPortal } from "react-dom";
 import ColorPicker from "../../colorPicker/ColorPicker";
 
 import IconClose from "@mui/icons-material/CloseRounded";
-import IconAdd from '@mui/icons-material/AddCircleRounded';
-import IconInfo from '@mui/icons-material/Info';
+import IconAdd from "@mui/icons-material/AddCircleRounded";
+import IconInfo from "@mui/icons-material/Info";
 
 import style from "./CreateFolder.module.css"
 
