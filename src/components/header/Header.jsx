@@ -4,7 +4,7 @@ import Badge from "@mui/material/Badge";
 import IconNotifications from "@mui/icons-material/NotificationsRounded";
 import IconSettings from "@mui/icons-material/SettingsRounded";
 
-import style from "./Header.module.css";
+import style from "./Header.module.scss";
 import Notification from "../modals/notification/Notification";
 
 const Header = () => {

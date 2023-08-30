@@ -1,5 +1,5 @@
 
-import style from "./MediaPlayer.module.css"
+import style from "./MediaPlayer.module.scss"
 
 const MediaPlayer = ({isShow, handlerToggleShow}) => {
 

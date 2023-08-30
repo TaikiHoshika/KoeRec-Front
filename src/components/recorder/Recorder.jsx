@@ -9,7 +9,7 @@ import IconStop from "@mui/icons-material/StopRounded";
 import IconLock from "@mui/icons-material/HttpsRounded";
 import IconNoLock from "@mui/icons-material/LockOpenRounded";
 
-import style from "./Recorder.module.css";
+import style from "./Recorder.module.scss";
 
 const Recorder = () => {
     const [isRecording, setIsRecording] = useState(false);

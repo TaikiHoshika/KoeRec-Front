@@ -1,5 +1,5 @@
 
-import style from "./ColorPicker.module.css";
+import style from "./ColorPicker.module.scss";
 
 const ColorPicker = ({colors, onChangeColor}) => {
 

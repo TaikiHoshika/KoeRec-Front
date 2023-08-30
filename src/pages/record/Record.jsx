@@ -1,6 +1,6 @@
 import Recorder from "../../components/recorder/Recorder";
 
-import style from "./Record.module.css";
+import style from "./Record.module.scss";
 
 const Record = () => {
     return (

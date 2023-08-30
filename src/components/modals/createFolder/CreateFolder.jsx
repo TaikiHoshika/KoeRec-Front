@@ -6,7 +6,7 @@ import IconClose from "@mui/icons-material/CloseRounded";
 import IconAdd from "@mui/icons-material/AddCircleRounded";
 import IconInfo from "@mui/icons-material/Info";
 
-import style from "./CreateFolder.module.css"
+import style from "./CreateFolder.module.scss"
 
 const CreateFolder = ({isShow, handlerToggleShow}) => {
     const [showNoNameError, setShowNoNameError] = useState(false);

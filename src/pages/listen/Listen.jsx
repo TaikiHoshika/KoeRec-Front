@@ -8,7 +8,7 @@ import IconFolder from "@mui/icons-material/FolderRounded";
 import IconFile from "@mui/icons-material/AudioFileRounded";
 import IconSearch from "@mui/icons-material/SearchRounded";
 
-import style from "./Listen.module.css";
+import style from "./Listen.module.scss";
 
 const Listen = () => {
     const [showCreateFolder, setShowCreateFolder] = useState(false);

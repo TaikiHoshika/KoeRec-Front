@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import IconClose from "@mui/icons-material/CloseRounded";
 import IconLoading from "@mui/material/CircularProgress";
 
-import style from "./Notification.module.css";
+import style from "./Notification.module.scss";
 
 const Notification = ({isShow, handlerToggleShow}) => {
     const closeWindow = () => {
