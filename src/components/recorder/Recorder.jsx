@@ -35,21 +35,31 @@ const Recorder = () => {
                     <IconName />
                 </div>
                 <div className={style.buttons}>
-                    <button type="button">
+                    <button type="button" disabled={isRecording}>
                         <IconColor />
                     </button>
-                    <button type="button">
+                    <button type="button" disabled={isRecording}>
                         <IconFolder />
                     </button>
                 </div>
             </div>
+            <div
+                className={style.status}
+                style={{opacity: isRecording ? 1 : 0}}
+            >
+                <span className={style.label}>録音中</span>
+                <span>10:05</span>
+            </div>
             <div className={style.recorder}>
                 <div className={style.switch}>
-                    {!isRecordButtonDisalbed ? (<IconNoLock />) : (<IconLock />)}
-                    <Switch
-                        onChange={handlerToggleRecordButton}
-                        sx={{color: "#fff"}}
-                    />
+                    <div>
+                        {!isRecordButtonDisalbed ? (<IconNoLock />) : (<IconLock />)}
+                        <Switch
+                            onChange={handlerToggleRecordButton}
+                            sx={{color: "#fff"}}
+                            disabled={!isRecording}
+                        />
+                    </div>
                 </div>
                 <button
                     type="button"

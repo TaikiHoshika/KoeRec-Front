@@ -12,7 +12,7 @@ const ColorPicker = ({colors, onChangeColor}) => {
             {colors.map((color) => (
                 <div className={style.colorPicker} style={{backgroundColor: color}} key={color}>
                     <div className={style.button}>
-                        <input type="radio" name="color" value={color} onChange={handlerChangeColor} />
+                        <input type="radio" name="color" value={color} onChange={handlerChangeColor}/>
                     </div>
                 </div>
             ))}
